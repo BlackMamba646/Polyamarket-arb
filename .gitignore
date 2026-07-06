@@ -1,0 +1,10 @@
+config.yaml
+*.pem
+.env
+__pycache__/
+*.pyc
+venv/
+.venv/
+*.db
+*.log
+.pytest_cache/

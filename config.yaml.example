@@ -1,0 +1,21 @@
+# Polymarket credentials
+polymarket:
+  private_key: "0xYOUR_PRIVATE_KEY"
+  wallet_address: "0xYOUR_WALLET_ADDRESS"
+  chain_id: 137
+  signature_type: 3
+
+# Kalshi credentials
+kalshi:
+  api_key_id: "YOUR_KALSHI_API_KEY_ID"
+  private_key_path: "kalshi_private_key.pem"
+
+# Arbitrage settings
+arbitrage:
+  min_profit_threshold: 0.02      # minimum profit per $1 contract (2 cents)
+  max_bet_size: 50.0              # max dollars per side of a trade
+  scan_interval_seconds: 30       # how often to scan for opportunities
+  match_score_threshold: 80       # fuzzy match score (0-100) to consider markets the same
+  max_total_exposure: 500.0       # max total capital deployed
+  dry_run: true                   # set false to execute real trades
+  use_kalshi_demo: true           # use Kalshi demo sandbox
